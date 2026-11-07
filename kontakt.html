@@ -33,6 +33,7 @@
         <li class="gr"><button class="gr-b" type="button" aria-expanded="false" aria-controls="m-oferta">Oferta<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></button>
           <div class="drop" id="m-oferta"><div class="drop-in"><a href="szkoly.html"><span class="znak" style="--k:var(--g-green)" aria-hidden="true"></span><b>Szkoły i grupy dziecięce</b><small>wycieczki klasowe, zielone szkoły</small></a><a href="grupy.html"><span class="znak" style="--k:var(--g-blue)" aria-hidden="true"></span><b>KGW, seniorzy i grupy zorganizowane</b><small>spokojne tempo, regionalne smaki</small></a><a href="biura.html"><span class="znak" style="--k:var(--g-black)" aria-hidden="true"></span><b>Biura podróży</b><small>prowadzenie i pilotaż grup</small></a><a href="rodziny.html"><span class="znak" style="--k:var(--g-yellow)" aria-hidden="true"></span><b>Rodziny i turyści indywidualni</b><small>trasa pod Wasze tempo</small></a><a href="oferta.html" class="drop-all">Cała oferta</a></div></div></li>
         <li><a href="trasy.html">Trasy i wycieczki</a></li>
+        <li><a href="spacery.html">Spacery<span class="nav-dop"> - dołącz do grupy</span></a></li>
         <li class="gr"><button class="gr-b" type="button" aria-expanded="false" aria-controls="m-inf">Informator<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></button>
           <div class="drop drop-mega" id="m-inf"><div class="drop-in"><div class="kol"><p class="drop-h">Regiony</p><a href="pieniny.html"><span class="znak" style="--k:var(--red)" aria-hidden="true"></span><b>Pieniny</b></a><a href="gorce.html"><span class="znak" style="--k:var(--g-green)" aria-hidden="true"></span><b>Gorce</b></a><a href="beskid-sadecki.html"><span class="znak" style="--k:var(--g-blue)" aria-hidden="true"></span><b>Beskid Sądecki</b></a><a href="podhale.html"><span class="znak" style="--k:var(--g-yellow)" aria-hidden="true"></span><b>Podhale</b></a><a href="spisz.html"><span class="znak" style="--k:var(--g-black)" aria-hidden="true"></span><b>Spisz</b></a><a href="orawa.html"><span class="znak" style="--k:var(--g-black)" aria-hidden="true"></span><b>Orawa</b></a><a href="slowacja.html"><span class="znak" style="--k:var(--red)" aria-hidden="true"></span><b>Słowacja</b></a></div><div class="kol"><p class="drop-h">Działy</p><a href="atrakcje.html"><span class="znak" style="--k:var(--red)" aria-hidden="true"></span><b>Atrakcje</b><small>szczyty, zamki, wąwozy</small></a><a href="historia-i-kultura.html"><span class="znak" style="--k:var(--red)" aria-hidden="true"></span><b>Historia i kultura</b><small>legendy, pasterstwo, ludzie</small></a><a href="porady.html"><span class="znak" style="--k:var(--red)" aria-hidden="true"></span><b>Porady</b><small>bezpieczeństwo, ekwipunek</small></a></div><a href="informator.html" class="drop-all">Cały informator</a></div></div></li>
         <li><a href="relacje.html">Relacje i aktualności</a></li>
@@ -48,20 +49,24 @@
   </div>
 </header>
 <main id="tresc">
-<section class="art-head"><div class="wrap"><nav class="okr" aria-label="Jesteś tutaj"><a href="index.html">Strona główna</a><i aria-hidden="true"></i><span aria-current="page">Kontakt</span></nav><h1>Masz pomysł na wycieczkę? Zacznijmy ją planować</h1><p class="lead">Napisz, dokąd chcecie pojechać, ile osób będzie w grupie i kiedy planujecie wyjazd. Jeśli nie macie jeszcze programu, tym lepiej. Pomogę go stworzyć.</p></div></section>
+<section class="art-head"><div class="wrap"><nav class="okr" aria-label="Jesteś tutaj"><a href="index.html">Strona główna</a><i aria-hidden="true"></i><span aria-current="page">Kontakt</span></nav><h1>Masz pomysł na wycieczkę? Zacznijmy ją planować</h1><p class="lead">Formularz dla grup zorganizowanych: szkół, kół gospodyń, seniorów, biur podróży i parafii. Napisz, kim jesteście, ile osób jedzie i kiedy. Program i cenę ustalimy bezpośrednio.</p></div></section>
+<div class="wrap"><p class="kon-ind"><span class="znak" style="--k:var(--g-green)" aria-hidden="true"></span><span>Jedziesz sam, we dwoje albo z rodziną? Nie musisz zamawiać przewodnika, <a href="spacery.html">dołącz do otwartego spaceru</a>.</span></p></div>
 <section class="sek sek-jasna" id="kontakt" style="padding-top:56px"><div class="wrap kontakt">
   <div class="kontakt-form"><form class="form" id="k-form" novalidate>
-        <div class="pole pole-2"><label for="k-kto">Imię i nazwisko lub nazwa instytucji</label><input id="k-kto" name="kto" autocomplete="name" required></div>
+        <div class="pole"><label for="k-grupa">Rodzaj grupy</label><select id="k-grupa" name="grupa"><option>Szkoła / przedszkole</option><option>Koło Gospodyń Wiejskich</option><option>Seniorzy / UTW</option><option>Biuro podróży / organizator</option><option>Grupa parafialna / stowarzyszenie</option><option>Inna grupa</option></select></div>
+        <div class="pole"><label for="k-usl">Rodzaj usługi</label><select id="k-usl" name="usluga"><option>Usługa przewodnicka</option><option>Pilotaż wycieczki</option><option>Inne (warsztaty, biesiada, kulig)</option></select></div>
+        <div class="pole pole-2"><label for="k-kto">Imię i nazwisko osoby kontaktowej</label><input id="k-kto" name="kto" autocomplete="name" required></div>
         <div class="pole"><label for="k-tel">Telefon</label><input id="k-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></div>
-        <div class="pole"><label for="k-mail">E-mail</label><input id="k-mail" name="mail" type="email" autocomplete="email"></div>
-        <div class="pole"><label for="k-termin">Planowany termin</label><input id="k-termin" name="termin" placeholder="np. maj, 2-3 dni"></div>
-        <div class="pole"><label for="k-ile">Liczba osób i wiek</label><input id="k-ile" name="ile" placeholder="np. 45 osób, klasy 5-6"></div>
-        <div class="pole pole-2"><label for="k-gdzie">Obszar lub miejsce</label><input id="k-gdzie" name="gdzie" placeholder="np. Pieniny, Słowacja"></div>
-        <div class="pole pole-2"><label for="k-prog">Program</label><select id="k-prog" name="program"><option>Wycieczka górska</option><option>Wycieczka autokarowa / krajoznawcza</option><option>Pilotaż wycieczki (Polska / Słowacja)</option><option>Inne (warsztaty, biesiada, kulig)</option></select></div>
-        <div class="pole pole-2"><label for="k-uwagi">Wasze życzenia</label><textarea id="k-uwagi" name="uwagi" rows="3"></textarea></div>
+        <div class="pole"><label for="k-mail">E-mail</label><input id="k-mail" name="mail" type="email" autocomplete="email" required></div>
+        <div class="pole"><label for="k-termin">Planowany termin</label><input id="k-termin" name="termin" placeholder="np. maj 2027, 2 dni"></div>
+        <div class="pole"><label for="k-ile">Liczba uczestników</label><input id="k-ile" name="ile" inputmode="numeric" placeholder="np. 45 osób"></div>
+        <div class="pole pole-2"><label for="k-gdzie">Miejsce lub region</label><input id="k-gdzie" name="gdzie" placeholder="np. Pieniny, Słowacja"></div>
+        
+        <div class="pole pole-2"><label for="k-uwagi">Preferowany program i uwagi</label><textarea id="k-uwagi" name="uwagi" rows="3" placeholder="np. Trzy Korony i spływ Dunajcem, spokojne tempo, obiad w karczmie"></textarea></div>
+        <div class="pole pole-2 zgoda"><input id="k-zgoda" name="zgoda" type="checkbox" required><label for="k-zgoda">Zgadzam się na przetwarzanie moich danych w celu odpowiedzi na zapytanie. Szczegóły w polityce prywatności.</label></div>
         <div class="pole-2 form-dol">
           <button class="btn" type="submit">Wyślij zapytanie<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
-          <p class="form-info" role="status">Odpowiadam osobiście, zwykle z propozycją programu.</p>
+          <p class="form-info" role="status">Odpowiadam osobiście, z propozycją programu i ceną dla Waszej grupy.</p>
         </div>
       </form></div>
   <aside class="kontakt-dane">
@@ -87,7 +92,7 @@
       </div>
       <div><h4>Oferta</h4><a href="szkoly.html">Szkoły i grupy dziecięce</a><a href="grupy.html">KGW, seniorzy i grupy zorganizowane</a><a href="biura.html">Biura podróży</a><a href="rodziny.html">Rodziny i turyści indywidualni</a></div>
       <div><h4>Informator</h4><a href="pieniny.html">Pieniny</a><a href="gorce.html">Gorce</a><a href="beskid-sadecki.html">Beskid Sądecki</a><a href="podhale.html">Podhale</a><a href="slowacja.html">Słowacja</a><a href="informator.html">Cały informator</a></div>
-      <div><h4>Serwis</h4><a href="trasy.html">Trasy i wycieczki</a><a href="relacje.html">Relacje i aktualności</a><a href="galeria.html">Galeria</a><a href="o-mnie.html">O mnie</a><a href="cennik.html">Cennik</a><a href="kontakt.html" aria-current="page">Kontakt</a><a href="mapa-serwisu.html">Mapa serwisu</a></div>
+      <div><h4>Serwis</h4><a href="trasy.html">Trasy i wycieczki</a><a href="spacery.html">Spacery - dołącz do grupy</a><a href="relacje.html">Relacje i aktualności</a><a href="galeria.html">Galeria</a><a href="o-mnie.html">O mnie</a><a href="cennik.html">Cennik</a><a href="kontakt.html" aria-current="page">Kontakt</a><a href="mapa-serwisu.html">Mapa serwisu</a></div>
     </div>
     <div class="stopka-dol">
       <span>© <span id="rok">2026</span> Jagoda Jurkowska<span class="sep">, </span><a href="mapa-serwisu.html">Mapa serwisu</a></span>
